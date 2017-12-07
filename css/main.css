@@ -1,0 +1,225 @@
+/*BLACK #080705*/
+/*DEEP PURPLE #362023*/
+/*PURPLE #700548*/
+/*LIGHT BLUE #7272AB*/
+/*BABY BLUE #7899D4*/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*Nav*/
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ul li {
+    flex: 1 0 auto;
+    text-align: center;
+    list-style-type: none;
+    background-color: #700548;
+}
+li a {
+    text-decoration: none!important;
+    display: block;
+    padding: 5px;
+    color: whitesmoke;    
+}
+li a:hover {
+    color: whitesmoke;
+    background-color: #700548;
+}
+
+.transparent {
+    background: rgba(0.0.0.0.5);
+}
+
+
+header {
+    height: 100vh;
+    background:url(../images/bldg1.jpg) fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-center {
+    height: 100vh;
+    color: #362023;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 75px;
+}
+
+.banner-underline {
+    width: 300px;
+    border: 3px solid #7272AB;
+    margin: 0px auto 40px auto;
+}
+
+.btn-holder {
+	display: flex;
+	justify-content: center;
+}
+
+.white-btn, .navy-btn {
+	color: whitesmoke;
+	font-size: 2em;
+	margin: 0 30px;
+	text-decoration: none!important;
+	border-radius: 20px;
+	padding: 10px 30px;
+}
+
+.navy-btn {
+	border: 3px solid #7272AB;
+}
+
+.banner-center a {
+    font-size: 30px;
+    width: 300px;
+    margin: 8px auto;
+    display: inline-block;
+    border: 3px solid whitesmoke;
+    color: #86BBD8;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.banner-center a:hover,
+.banner a:focus {
+    color: #2F4858;
+    background-color: whitesmoke;
+}
+/* End of Banner */
+
+/* Title */
+.title {
+    margin: 20px 0 40px 0;
+}
+.title-underline {
+    width: 150px;
+    border: 3px solid rgb(223, 29, 29);
+    margin: 0px auto 10px auto;
+}
+
+/* Quality */
+#qualities {
+	background-color: #CED0CE;
+}
+#qualities .fa {
+	font-size: 100px;
+	color: #700548;
+	margin-bottom: 10px;
+}
+#qualities h2 {
+	margin-bottom: 20px;
+}
+
+/* Projects */
+#projects {
+    padding: 20px 0 0 0;
+    background-color: #362023;
+    color: whitesmoke;
+}
+.left {
+    padding-left: 0;
+}
+.right {
+    padding-right: 0;
+}
+
+/* Contact */
+#contact {
+    padding: 40px;
+    background-color: whitesmoke;
+    color: #86BBD8;
+}
+#contact .form-control {
+    border-radius: 0!important;
+    font-size: 20px;
+}
+#contact button {
+    background-color:#353531;
+    font-size: 24px;
+    color: #86BBD8;
+    margin-bottom: 20px;
+}
+#contact button:hover {
+    background-color: #CED8CE;
+}
+
+/* Footer*/
+#footer {
+    padding: 40px;
+    color: whitesmoke;
+    background-color: #362023;
+}
+#footer .title-underline {
+    margin-bottom: 40px;
+}
+#footer .footer-icons {
+    font-size: 30px;
+    padding-top: 30px;
+}
+#footer .footer-icons a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+#footer .footer-icons a:hover {
+    color:whitesmoke;
+}
+#footer .copyrights h3 {
+    padding: 40px 0;
+    color: #86BBD8;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 800px){
+    h3, p {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    .banner-center h1 {
+        font-size: 80px;
+
+    }
+}
+@media screen and (max-width:576px) {
+    #projects .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-1 {
+        order:1;
+    }
+    .item-2 {
+        order:2;
+    }
+    .item-3 {
+        order:4;
+    }
+    .item-4 {
+        order:3;
+    }
+    .item-5 {
+        order:5;
+    }
+    .item-6 {
+        order:6;
+    }
+}
